@@ -1,0 +1,43 @@
+body {
+    padding-top: 30px;
+    max-width: max-content;
+    margin: auto; 
+}
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+body,textarea {
+    background: #202020;
+    color: #C0C0C0;
+}
+
+
+
+textarea {
+    font-size: 16px;
+    font-family: "DejaVu Sans Mono", monospace;
+    background: #202020;
+    border-radius: 4px;
+    border: 1px solid rgb(0,122,255);
+    margin-bottom: 30px;
+}
+
+#output {
+    border: 0px;
+}
+
+.ptr {
+    color: #f0f0f0;
+    /* text-decoration: underline; */
+    /* font-weight: bold; */
+}
+
+.zero {
+    opacity: 40%;
+}
+
+.ptr .zero {
+    opacity: 80%;
+}
