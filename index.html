@@ -1,12 +1,74 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
+<meta charset="utf-8" />
 <head>
-    <script src="interp.js"></script>
-    <script src="main.js"></script>
-    <link rel="stylesheet" href="main.css">
+  <script src="interp.js"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="main.css" />
+  <!-- Cool google fonts here -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Icon to add a new log -->
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+  />
 </head>
 <body onload="init();">
-    <textarea id="input" rows=15 cols=50></textarea>
-    <button type="button" onclick="run();">Run</button>
-    <pre id="output"></pre>
+  <!-- <textarea id="input" rows=15 cols=50></textarea> -->
+  <!-- <button type="button" onclick="run();">Run</button> -->
+  <div class="floating_btn">
+    <a target="_blank" href="#">
+      <div class="contact_icon">
+        <i class="fa fa-plus"></i>
+      </div>
+    </a>
+    <p class="text_icon">New log</p>
+  </div>
+  <!-- <pre id="output"></pre> -->
+  <!-- Add table here to display logs -->
+  <div class="table-container">
+    <table>
+      <caption>
+        Log Summary
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">User</th>
+          <th scope="col">Log</th>
+          <th scope="col">Description</th>
+          <th scope="col">TimeStamp</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="User">l.anderson663</td>
+          <td data-label="Log">Fix API</td>
+          <td data-label="Description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </td>
+          <td data-label="TimeStamp">October 31, 2021</td>
+        </tr>
+        <tr>
+          <td data-label="User">h.wilson1</td>
+          <td data-label="Log">Lorem ipsum</td>
+          <td data-label="Description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </td>
+          <td data-label="TimeStamp">August 19, 2021</td>
+        </tr>
+        <tr>
+          <td data-label="User">t.shaw235</td>
+          <td data-label="Log">Lorem ipsum</td>
+          <td data-label="Description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </td>
+          <td data-label="TimeStamp">November 20, 2021</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
